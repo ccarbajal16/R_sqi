@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "locale": "en_US.UTF-8",
+  "metadata": {
+    "appmode": "shiny",
+    "entrypoint": "app.R",
+    "primary_rmd": null,
+    "primary_html": null,
+    "content_category": null,
+    "has_parameters": false
+  },
+  "packages": {
+    "R": [
+      {
+        "package": "shiny",
+        "version": null,
+        "repository": "CRAN"
+      },
+      {
+        "package": "shinydashboard",
+        "version": null,
+        "repository": "CRAN"
+      },
+      {
+        "package": "shinyWidgets",
+        "version": null,
+        "repository": "CRAN"
+      },
+      {
+        "package": "DT",
+        "version": null,
+        "repository": "CRAN"
+      },
+      {
+        "package": "plotly",
+        "version": null,
+        "repository": "CRAN"
+      },
+      {
+        "package": "leaflet",
+        "version": null,
+        "repository": "CRAN"
+      },
+      {
+        "package": "readxl",
+        "version": null,
+        "repository": "CRAN"
+      },
+      {
+        "package": "writexl",
+        "version": null,
+        "repository": "CRAN"
+      },
+      {
+        "package": "tidyverse",
+        "version": null,
+        "repository": "CRAN"
+      },
+      {
+        "package": "FactoMineR",
+        "version": null,
+        "repository": "CRAN"
+      },
+      {
+        "package": "factoextra",
+        "version": null,
+        "repository": "CRAN"
+      },
+      {
+        "package": "corrplot",
+        "version": null,
+        "repository": "CRAN"
+      },
+      {
+        "package": "sf",
+        "version": null,
+        "repository": "CRAN"
+      },
+      {
+        "package": "terra",
+        "version": null,
+        "repository": "CRAN"
+      },
+      {
+        "package": "gstat",
+        "version": null,
+        "repository": "CRAN"
+      },
+      {
+        "package": "automap",
+        "version": null,
+        "repository": "CRAN"
+      },
+      {
+        "package": "sp",
+        "version": null,
+        "repository": "CRAN"
+      },
+      {
+        "package": "caret",
+        "version": null,
+        "repository": "CRAN"
+      }
+    ]
+  },
+  "files": [
+    "app.R",
+    "requirements.R",
+    "README.md",
+    "user_guide.md"
+  ],
+  "users": null,
+  "python": null
+}
