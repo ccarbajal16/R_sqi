@@ -207,9 +207,8 @@ You can define custom optimal ranges based on:
 If you use this application in your research, please cite:
 
 ```
-[Your Citation Information Here]
-Soil Quality Index Calculator v1.0
-[Your Institution/Contact Information]
+Carbajal, C. (2025). Soil Quality Index (SQI) Shiny Application [Computer software].
+GitHub. https://github.com/ccarbajal16/R_sqi
 ```
 
 ## Support
