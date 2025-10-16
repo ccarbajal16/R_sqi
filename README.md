@@ -167,8 +167,7 @@ Upload study area boundaries in:
 | Bulk Density   | Less is Better | -             | Lower BD indicates less compaction                |
 | CEC            | More is Better | -             | Higher CEC means better nutrient retention        |
 | EC (dS/m)      | Optimal Range  | 2.0 - 15.0    | Moderate salinity range                           |
-| Phosphorus     | More is Better | -             | Higher P availability for plants                  |
-| Potassium      | More is Better | -             | Higher K availability for plants                  |
+
 
 ### Custom Optimal Ranges
 
