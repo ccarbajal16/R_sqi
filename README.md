@@ -2,6 +2,13 @@
 
 Interactive Shiny dashboard for calculating and mapping a Soil Quality Index (SQI) using PCA-based weights and basic geostatistics.
 
+## Available on Connect cloud.
+
+### 🚀 Access the App
+
+You can access the live application here: [R_sqi App](https://0199eb2e-570d-0815-0ea9-33030d7b20e8.share.connect.posit.cloud/)
+
+
 ## Features
 
 - **Step-by-step dashboard** covering data upload, exploratory analysis, PCA, SQI calculation, spatial interpolation, and results review
