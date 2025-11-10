@@ -1,5 +1,4 @@
 # Soil Quality Index (SQI) Shiny Application
-# Based on 2_sqi_moquegua.R and 3_ml_geostats_sqi.R
 
 library(shiny)
 library(shinydashboard)
