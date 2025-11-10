@@ -47,7 +47,7 @@ default_ranges <- list(
   K = c(300, 800),
   Clay = c(10, 25),
   Silt = c(30, 50),
-  pH = c(6.5, 7.5),
+  PH = c(6.5, 7.5),
   P = c(15, 45),
   Sand = c(40, 60)
 )
@@ -61,7 +61,7 @@ default_norm_types <- c(
   K = "range_optimo",
   Clay = "range_optimo",
   Silt = "range_optimo",
-  pH = "range_optimo",
+  PH = "range_optimo",
   P = "more_is_better",
   Sand = "range_optimo"
 )
@@ -275,6 +275,8 @@ ui <- dashboardPage(
           box(
             title = "SQI Calculation", status = "success", solidHeader = TRUE, width = 4,
             actionButton("calculate_sqi", "Calculate SQI", class = "btn-success"),
+            br(), br(),
+            downloadButton("download_sqi_csv", "Download SQI Table (CSV)", class = "btn-info"),
             br(), br(),
             h4("SQI Statistics:"),
             verbatimTextOutput("sqi_stats")
@@ -1047,7 +1049,23 @@ server <- function(input, output, session) {
       write.csv(result_data, file, row.names = FALSE)
     }
   )
-  
+
+  # Download handler for SQI Calculator section
+  output$download_sqi_csv <- downloadHandler(
+    filename = function() {
+      paste("sqi_table_", Sys.Date(), ".csv", sep = "")
+    },
+    content = function(file) {
+      req(values$raw_data, values$sqi_values)
+
+      complete_rows <- complete.cases(values$raw_data[, values$final_vars])
+      result_data <- values$raw_data[complete_rows, ]
+      result_data$SQI <- values$sqi_values
+
+      write.csv(result_data, file, row.names = FALSE)
+    }
+  )
+
   output$download_raster <- downloadHandler(
     filename = function() {
       paste("sqi_raster_", Sys.Date(), ".tif", sep = "")
